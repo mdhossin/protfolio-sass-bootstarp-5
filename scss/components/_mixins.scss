@@ -1,0 +1,22 @@
+@use '../custom' as *;
+
+// gradiant color mixins
+@mixin gradientColor {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}
+
+// absolute position center
+
+@mixin absolutePositionCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+// transition property
+
+@mixin transitionPropery {
+    transition: all 500ms ease-in-out;
+}

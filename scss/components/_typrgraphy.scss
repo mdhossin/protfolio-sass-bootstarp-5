@@ -1,0 +1,93 @@
+@use '../custom' as *;
+
+
+// intro section text style only
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+
+    &__intro{
+        display: inline-block;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    &__description{
+        font-size: 1rem;
+        display: block;
+        margin-top: 1.2rem;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg){
+            font-size: 1.4rem;
+            display: inline-block;
+        }
+       
+    }
+}
+
+// companies section text style
+
+// heading line useing before and after
+
+.heading-line::before{
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+.heading-line::after{
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.3rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: $primary;
+}
+
+
+// companies section text style
+
+// display-3 style
+
+.display-3{
+    font-family: 'Poppins', sans-serif;
+
+    // services text style display-3
+    &__title{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        background-image: linear-gradient(to right, $primary, $secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include media-breakpoint-up(lg){
+            font-size: 1.8rem;
+        }
+    }
+}
+
+// border right style
+
+.border-right{
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
+}
+
+
+// get started section style
+
+// gradient background styleing
+
+.gradient{
+   background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+}
